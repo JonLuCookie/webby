@@ -1,0 +1,106 @@
+body {
+  font-family:'Cinzel', sans-serif; /* how to change text */
+}
+
+h1, h2, h3 {
+  text-transform:uppercase; /* general selectors */
+  letter-spacing: 3px; /* msrd in pixels */
+  font-weight: 300; /* thinner-thicker */
+}
+
+header {
+  text-align: center; /* alignment - cmd slash */
+  color: white;
+  /*abc - debug - fg*/
+  background-color: purple;
+  background-image:
+  url(../images/background.jpg); /* ../ = get out of folder */
+  background-size:cover; /* cover = stretch */
+  padding: 30px ; /* padding for all 4-sides increases space inside box */
+  margin-bottom: 20px ; /* margin = horizontal side-shifter */
+}
+
+header img {
+  border: 3px solid white; /* cascading stylesheet */
+  border-radius: 50%
+}
+
+div {
+  padding: 40px;
+  line-height: 1.6
+}
+
+a { /* a = anchor tag */
+  color: red;
+  text-decoration: none;
+}
+
+a:hover { /* pseudo-selector */
+  background-color: orange;
+}
+
+/* .cat {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.cat:hover {
+background-image:
+url(../images/profile.jpg)
+}*/
+
+.skills {
+  background-color: lightgreen;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: orange;
+  padding: 40px;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer ul li {
+  display: inline; /* turns items into a row */
+  margin: 50px
+}
+
+.row {
+  width: 960px;
+  margin: 0 auto; /* centralizes the box automatically */
+/*  border: 1px solid red; */
+}
+
+.col {
+  width: 25.00%;
+  float: left;
+  padding:0 /* Float causes text to flush left */
+}
+
+.hobbies {
+  clear: both; /* clear removes prev instruction */
+}
+
+@media (max-width: 960px) {
+  .row {
+    width: 100%; /* display: none; */
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .row {
+    display: none;
+  }
+}
+
+.container {
+  padding:0
+}
